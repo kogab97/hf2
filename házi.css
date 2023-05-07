@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.up-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(82, 80, 80);
+}
+
+.up-header-text {
+  display: flex;
+  list-style-type: none;
+}
+
+.up-header-text a,
+.up-header-button a {
+  color: rgb(134, 132, 132);
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
+.low-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+
+.low-header menu {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
