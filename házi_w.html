@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Trek Bikes - The world's best bikes and cycling gear | Trek Bikes (INE)
+    </title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .up-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(82, 80, 80);
+      }
+
+      .up-header-text {
+        display: flex;
+        list-style-type: none;
+      }
+
+      .up-header-text a,
+      .up-header-button a {
+        color: rgb(134, 132, 132);
+        text-decoration: none;
+        padding: 5px 8px;
+      }
+
+      .up-header-text a:hover {
+        color: white;
+      }
+
+      .low-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        padding: 10px 0;
+      }
+
+      .low-header menu {
+        display: flex;
+        list-style-type: none;
+        text-decoration: none;
+      }
+
+      .menu a,
+      .low-header a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+      }
+
+      .menu a:hover {
+        text-decoration: underline;
+        color: red;
+      }
+
+      form {
+        border: 1px solid white;
+      }
+
+      input {
+        background-color: black;
+      }
+
+      .main-one,
+      .main-three {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        background-color: lightblue;
+      }
+
+      .main-one h1,
+      .main-two h1,
+      .main-three h1 {
+        color: white;
+        font-size: 30px;
+        margin: 0px;
+      }
+
+      .main-one p,
+      .main-three p {
+        color: white;
+      }
+
+      .main-one-choice {
+        display: flex;
+        column-gap: 20px;
+      }
+
+      .main-choice-a {
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        padding: 10px 10px;
+        border: 1px solid white;
+      }
+
+      .main-choice-a:hover {
+        background-color: lightgray;
+        border: 1px solid lightgray;
+      }
+
+      .main-two {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .main-two-choice img {
+        width: 100%;
+      }
+
+      .main-two-choice-first,
+      .main-two-choice-second {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      #opinion1,
+      #opinion2 {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-family: sansiff;
+      }
+
+      #opinion1:hover,
+      #opinion2:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(70, 70, 70);
+      }
+
+      footer h1,
+      p,
+      a {
+        color: rgb(200, 200, 200);
+      }
+
+      .footer-container {
+        width: 50%;
+      }
+
+      .footer-form {
+        background-color: rgb(70, 70, 70);
+      }
+
+      hr {
+        color: rgb(200, 200, 200);
+        height: 0.05px;
+        width: 90%;
+      }
+
+      .footer-end {
+        display: grid;
+        grid-template-rows: 20px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-areas:
+          "header header header header"
+          "body body body body";
+      }
+
+      .list-heading {
+        grid-area: header;
+      }
+
+      .footer.end-list-item li {
+        grid-area: body;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="up-header">
+        <div class="up-header-text">
+          <a href="#">Trek</a>
+          <a href="#">Electra</a>
+          <a href="#">Bontrager</a>
+          <a href="#">TrekTravel</a>
+        </div>
+
+        <div class="up-header-button">
+          <a href="#" title="International / English">EN</a>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+
+      <div class="low-header">
+        <div class="logo" style="color: white">
+          <a href="#" title="Return to the homepage">TREK</a>
+        </div>
+
+        <div class="menu">
+          <a href="#">Mountain</a>
+          <a href="#">Road</a>
+          <a href="#">City</a>
+          <a href="#">Electric</a>
+          <a href="#">Kids</a>
+          <a href="#">Equipment</a>
+          <a href="#">Clothing</a>
+          <a href="#">Inside trek</a>
+          <a href="#">Shop</a>
+        </div>
+
+        <form>
+          <button type="submit">
+            <img
+              src="https://pngtree.com/freepng/vector-search-icon_4139928.html"
+              alt="icon"
+            />
+          </button>
+          <input
+            type="text"
+            name="header-search"
+            id="header-search"
+            class="input"
+            placeholder="Search"
+          />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-one">
+        <h1>Cemented in the classics</h1>
+        <p><b>Introducing the Project One ICON Monumental paint scheme</b></p>
+
+        <div class="main-one-choice">
+          <a class="main-choice-a" href="#" title="Costumise">COSTUMISE</a>
+          <a class="main-choice-a" href="#" title="See the bike"
+            >SEE THE BIKE</a
+          >
+        </div>
+      </div>
+
+      <div class="main-two">
+        <div class="main-two-header">
+          <h1>The reviews are in...</h1>
+        </div>
+        <section class="main-two-choice">
+          <div class="main-two-choice-first">
+            <article>
+              <img
+                src="https://media.trekbikes.com/image/upload/w_640,h_480,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR3x4_2UP"
+              />
+
+              <a id="opinion1" href="#" title="See Madone SLR"
+                ><b>"Every inch an aero race bike"</b></a
+              >
+              <p>
+                The Madone SLR is a race bike in a class of its own –
+                ultra-aero, innovative, and, in Bikeradar’s words, 'sharp as a
+                tack and incredibly easy to tip into corners'.
+              </p>
+              <a class="main-choice-a" href="#" title="See Madone SLR"
+                >SEE MADONE SLR</a
+              >
+            </article>
+          </div>
+          <div class="main-two-choice-second">
+            <img
+              src="https://media.trekbikes.com/image/upload/w_640,h_480,c_pad,f_auto,fl_progressive:semi,q_auto/DomaneSLR_NEW_3x4_2UP"
+            />
+            <a id="opinion2" href="#" title="Explore Domane"
+              >'Freaking fast, wonderfully comfortable and oh so practical'</a
+            >
+            <p>
+              There was always a lot to love about Domane – and the newest
+              edition is even lighter and quicker. As Bicycling put it, the new
+              Domane is 'a great bike made better'.
+            </p>
+            <a class="main-choice-a" href="#" title="Explore Domane"
+              >EXPLORE DOMANE</a
+            >
+          </div>
+        </section>
+      </div>
+
+      <div class="main-three">
+        <h1>New year. New gear.</h1>
+        <p><b>All new bikes are here</b></p>
+
+        <div class="main-three-choice">
+          <a class="main-choice-a" href="#" title="Costumise">FIND YOUR BIKE</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <h1>SIGN ME UP!</h1>
+        <p>
+          Get special offers, exclusive product news, and event info straight to
+          your inbox.
+        </p>
+
+        <div>
+          <form class="footer-form">
+            <input
+              type="text"
+              name="footer-join"
+              id="footer-join"
+              class="input"
+              placeholder="Enter your email address"
+            />
+            <button type="submit">JOIN</button>
+          </form>
+        </div>
+
+        <p style="font-size: 10px">
+          By submitting this form, you consent to sending the above information
+          to Trek Bicycle, which will be stored in the United States. For a
+          detailed explanation of Trek's collection and use of personal data
+          please see the <a href="#">Privacy Policy </a>&<a href="#">
+            Terms of use</a
+          >
+        </p>
+
+        <!-- ikonok -->
+      </div>
+      <hr />
+
+      <div class="footer-end">
+        <ul>
+          <li class="footer-end-list">
+            <div class="footer-end-link-list">
+              <h4 class="list-heading">SHOP</h4>
+              <ul>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Road bikes">Road bikes</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Mountain bikes">Mountain bikes</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Hybrid bikes">Hybrid bikes</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Electra bikes">Electra bikes</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Men's bikes">Men's bikes</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Women's bikes">Women's bikes</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Equipment">Equipment</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Clothing">Clothing</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Costumise">Costumise</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Find a bikeshop">Find a bikeshop</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Bike tours">Bike tours</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="footer-end-link-list">
+              <h4 class="list-heading">INSIDE TREK</h4>
+              <ul>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Heritage">Heritage</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Technology">Technology</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Racing">Racing</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Stories">Stories</a>
+                </li>
+                <li class="footer-end-list-item">
+                  <a href="#" title="Work at Trek">Work at Trek</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
